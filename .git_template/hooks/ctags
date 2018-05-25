@@ -1,0 +1,16 @@
+#!/bin/sh
+set -e
+PATH="/usr/local/bin:$PATH"
+dir="`git rev-parse --git-dir`"
+trap 'rm -f "$dir/$$.tags"' EXIT
+#if [ -d "vendor" ]; then
+#	git ls-files \
+#	| ctags -R --fields=+aimlS --languages=php --tag-relative -L - -f"$dir/$$.tags" \
+#	vendor
+#else
+#	git ls-files \
+#	| ctags -R --fields=+aimlS --languages=php --tag-relative -L - -f"$dir/$$.tags"
+#fi
+ctags --tag-relative -L - -f"$dir/$$.tags" --languages=-javascript,sql
+mv "$dir/$$.tags" "$dir/tags"
+

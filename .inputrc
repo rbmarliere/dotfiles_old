@@ -1,0 +1,3 @@
+# https://lists.mysql.com/mysql/95337
+set editing-mode vi
+set show-all-if-ambiguous On # after TAB is pressed
