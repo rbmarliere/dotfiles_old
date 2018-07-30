@@ -12,6 +12,7 @@
 	ci = commit --verbose
 	co = checkout
 	d = diff
+	df = difftool
 	dc = diff --cached
 	fa = fetch --all
 	ff = merge --ff-only
@@ -28,3 +29,7 @@
 
 [init]
 	templatedir = ~/.git_template
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
