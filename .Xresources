@@ -1,18 +1,20 @@
-Xft*antialias:        True
-Xft*hinting:          Full
-URxvt.cursorBlink: 1
-URxvt.perl-ext-common: default,selection-to-clipboard,matcher,keyboard-select
-URxvt.keysym.M-u:     perl:url-select:select_next
-URxvt.url-launcher:   /usr/bin/google-chrome-stable
-URxvt.underlineURLs:  True
-URxvt.matcher.button: 1
-URxvt.keysym.M-Escape:perl:keyboard-select:activate
-URxvt.keysym.Control-Shift-V:     perl:pasta:paste
+URxvt*scrollTtyKeypress:    true
+URxvt*scrollTtyOutput:      false
+URxvt*scrollWithBuffer:     true
 URxvt.clipboard.autocopy: true
+URxvt.cursorBlink: 1
+URxvt.font: xft:Hack:size=10
+URxvt.keysym.Control-Shift-V:     perl:pasta:paste
+URxvt.keysym.M-Escape:perl:keyboard-select:activate
+URxvt.keysym.M-u:     perl:url-select:select_next
+URxvt.matcher.button: 1
+URxvt.perl-ext-common: default,selection-to-clipboard,matcher,keyboard-select
 URxvt.saveLines: 81920
 URxvt.scrollBar: false
-URxvt.font: xft:Hack:size=10
-
+URxvt.underlineURLs:  True
+URxvt.url-launcher:   /usr/bin/google-chrome-stable
+Xft*antialias:        True
+Xft*hinting:          Full
 
 
 ! Solarized color scheme for the X Window System
