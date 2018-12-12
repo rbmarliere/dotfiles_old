@@ -3,7 +3,7 @@ URxvt*scrollTtyOutput:        false
 URxvt*scrollWithBuffer:       true
 URxvt.clipboard.autocopy:     true
 URxvt.cursorBlink:            1
-URxvt.font:                   xft:Hack:size=10
+URxvt.font:                   xft:Hack:size=11
 URxvt.keysym.Control-Shift-V: perl:pasta:paste
 URxvt.keysym.M-Escape:        perl:keyboard-select:activate
 URxvt.keysym.M-u:             perl:url-select:select_next
@@ -11,12 +11,15 @@ URxvt.matcher.button:         1
 URxvt.perl-ext-common:        default,selection-to-clipboard,matcher,keyboard-select
 URxvt.saveLines:              81920
 URxvt.scrollBar:              false
+URxvt.shading:                10
 URxvt.underlineURLs:          true
 URxvt.url-launcher:           /usr/bin/google-chrome-stable
 Xft*antialias:                true
 Xft*hinting:                  Full
 
+URxvt.transparent:            true
+#include "git/zsh/xresources/Xresources.dark"
+
+!URxvt.transparent:            false
 !#include "git/zsh/xresources/Xresources.light"
 
-#include "git/zsh/xresources/Xresources.dark"
-*color1: S_cyan
